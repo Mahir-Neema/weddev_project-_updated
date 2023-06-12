@@ -1,0 +1,56 @@
+.about_trainer_container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+  }
+  
+  .about_trainer_content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .trainer_name{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .trainer_des_heading{
+    margin-top: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+  }
+
+  .trainer_des{
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+  }
+  
+  .about_trainer_image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  .about_trainer_image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .about_trainer_container {
+      flex-direction: column;
+    }
+    
+    .about_trainer_content,
+    .about_trainer_image {
+      padding: 20px;
+    }
+  }
+  

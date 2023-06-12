@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import './Banner.css'
+import "./Banner.css";
 
 function Banner() {
   return (
@@ -31,8 +31,14 @@ function Banner() {
       </div>
 
       <div className="Banner_des">
-        Prepare for the Unexpected Transform your mindset Embrace a new era of
-        self defense
+        <div className="head">
+          <h1>Judo Pal</h1>
+        </div>
+        <div className="text">
+          Prepare for the Unexpected
+          <br /> Transform your mindset
+          <br /> Embrace a new era of self defense
+        </div>
       </div>
     </section>
   );

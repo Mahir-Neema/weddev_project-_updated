@@ -1,0 +1,64 @@
+.SessionTimeline_container {
+  background-color: #f5f7fa;
+  padding: 30px;
+  border-bottom: 1px solid rgb(228, 235, 243);
+}
+
+.SessionTimelineHeading {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 50px;
+  line-height: 55px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.session_card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6px;
+}
+
+.session_card {
+  display: block;
+  margin: 3px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: rgb(191, 146, 101);
+  margin: 3px;
+}
+
+.session_card_heading {
+  height: 30%;
+  margin: 0px 10px 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Inconsolata, monospace;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.session_card_duration {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, sans-serif;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.session_card_steps {
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+}
+
+.steps_italic {
+  color: rgb(255, 0, 0);
+  font-style: italic;
+}
+
+@media screen and (max-width: 767px) {
+    .session_card_container {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -4,6 +4,7 @@ import App from './App.jsx'
 import Navbar from './components/Navbar/Navbar.jsx';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './index.css'
+import Trainer from './components/Trainer/Trainer.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/trainers",
-        element: <h1>trainer</h1>
+        element: <Trainer/>
       },
       {
         path:"/resources",

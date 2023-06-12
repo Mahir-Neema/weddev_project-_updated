@@ -15,7 +15,7 @@ function Navbar() {
       <nav className='navbar_container'>
         <div className="nav_links">
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/">Our Trainers</NavLink>
+          <NavLink to="/trainers">Our Trainers</NavLink>
           <button onClick={toggleResources}>Resources <FaAngleDown/></button>
           {showResources && (
             <div className="resources_link">

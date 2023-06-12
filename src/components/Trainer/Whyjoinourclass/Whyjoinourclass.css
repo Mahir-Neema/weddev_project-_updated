@@ -1,0 +1,52 @@
+.why_join_our_class_container{
+    position: relative;
+    display: flex;
+    padding: 60px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border-bottom: 1px solid rgb(228, 235, 243);
+}
+
+.why_join_our_class_heading{
+    margin-bottom: 32px;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #333;
+}
+
+
+.why_join_cards_container{
+    display: flex;
+    margin-bottom: 0px;
+    padding: 15px 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(169, 113, 85);
+}
+
+.why_join_cards{
+    display: flex;
+    margin: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    text-align: center;
+    width: 250px;
+}
+
+.why_join_line{
+    width: 2px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: rgb(255, 255, 255);
+}
