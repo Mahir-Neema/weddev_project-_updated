@@ -1,52 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;1,400&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;1,400&family=Varela+Round&display=swap");
 
-
-.what_makes_us_the_best_container{
-    /* margin: 30px; */
-    background-color: #f5f7fa;
-    height: 600px;
+.what_makes_us_the_best_container {
+  /* margin: 30px; */
+  background-color: #f5f7fa;
+  height: 500px;
 }
 
-.what_makes_us_the_best{
-    padding: 60px;
-    text-align: center;
-    margin: auto auto 20px;
-    font-family: "Varela Round", sans-serif;
-    font-size: 70px;
-    line-height: 75px;
-    font-weight: 400;
+.what_makes_us_the_best {
+  padding: 60px;
+  text-align: center;
+  margin: auto auto 20px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 70px;
+  line-height: 75px;
+  font-weight: 400;
 }
 
-.slide2_container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 30px auto;
-    margin-bottom: 100px;
-    max-width: 1200px;
+.slide2_container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 30px auto;
+  margin-bottom: 100px;
+  max-width: 1200px;
+}
+
+/* styling of scroll bar  */
+.slide2_container::-webkit-scrollbar {
+  width: -1px;
+}
+
+.slide2_container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.slide2_container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.slide2_container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .slide2 {
-    display: flex;
-    width: 290px;
-    height: 150px;
-    margin: 10px 30px 10px 30px;
-    padding: 10px 20px;
-    /* flex-direction: row; */
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #ffffff;
-    text-align: center;
-    font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    font: 400;
-    cursor: pointer;
-    transition: 0.1s ease;
+  display: flex;
+  width: 290px;
+  height: 150px;
+  margin: 10px 30px 10px 30px;
+  padding: 10px 20px;
+  /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font: 400;
+  cursor: pointer;
+  transition: 0.1s ease;
 }
 
-.slide2:hover{
-    background-color: #000;
-    color: #fff;
+.slide2:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .slide2_container {
+    overflow-x: scroll;
+  }
+  .what_makes_us_the_best_container{
+    height: 700px;
+  }
 }

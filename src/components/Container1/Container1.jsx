@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -9,12 +9,28 @@ import { FreeMode, Navigation, Pagination } from "swiper";
 import './Container1.css'
 
 function Container1() {
+  const [isMobile, setIsMobile] = useState(false); 
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 900); // Adjust the threshold value as needed
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Set initial value
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   return (
     <div className='what_we_offer_container'>
         <div className="what_we_offer">What we Offer</div>
         <div className='what_we_offer_cards'>
         <Swiper
-            slidesPerView={3}
+            slidesPerView={isMobile? 1:3}
             spaceBetween={100}
             freeMode={true}
             navigation={true}
