@@ -9,11 +9,11 @@ import { FreeMode, Navigation, Pagination } from "swiper";
 import './Container1.css'
 
 function Container1() {
-  const [isMobile, setIsMobile] = useState(false); 
+  const [isMobile, setIsMobile] = useState(3000); 
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 900); // Adjust the threshold value as needed
+      setIsMobile(window.innerWidth); // Adjust the threshold value as needed
     };
 
     window.addEventListener('resize', handleResize);
@@ -30,7 +30,7 @@ function Container1() {
         <div className="what_we_offer">What we Offer</div>
         <div className='what_we_offer_cards'>
         <Swiper
-            slidesPerView={isMobile? 1:3}
+            slidesPerView={isMobile>900 ? 3: isMobile>660 ? 2:1}
             spaceBetween={100}
             freeMode={true}
             navigation={true}

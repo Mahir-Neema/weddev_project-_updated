@@ -46,9 +46,32 @@
   text-transform: capitalize;
   text-align: center;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-.banner_sliderImg{
-    width: 40vw;
+@media screen and (max-width: 760px) {
+  .Banner_section {
+      padding: 30px;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      min-height: 100vh;
+  }
+  .image_slider {
+      max-width: 113%;
+  }
+  .banner_sliderImg {
+      width: 96vw;
+  }
+  .Banner_des {
+      max-width: 100%;
+      margin-right: -10px;
+      margin-top: 29px;
+  }
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
 }

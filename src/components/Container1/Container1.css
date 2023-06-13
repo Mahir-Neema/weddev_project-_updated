@@ -48,3 +48,13 @@
     font-size: 20px;
     font-style: italic;
 }
+
+@media screen and (max-width: 760px) {
+    .what_we_offer_container {
+        margin: 0;
+        width: 113%;
+    } 
+    .slide {
+        width: 85%;
+    }
+}
