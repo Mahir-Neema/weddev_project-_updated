@@ -3,7 +3,7 @@ import "./AboutTrainer.css";
 
 function AboutTrainer() {
   return (
-    <>
+    <section style={{borderBottom:"1px solid rgb(228, 235, 243)"}}>
       <div className="about_trainer_container">
         <div className="about_trainer_content">
           <div className="trainer_name">Partha Chatterjee</div>
@@ -22,7 +22,7 @@ function AboutTrainer() {
           />
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

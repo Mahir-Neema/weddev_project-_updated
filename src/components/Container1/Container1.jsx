@@ -12,7 +12,7 @@ function Container1() {
   return (
     <div className='what_we_offer_container'>
         <div className="what_we_offer">What we Offer</div>
-        <div>
+        <div className='what_we_offer_cards'>
         <Swiper
             slidesPerView={3}
             spaceBetween={100}

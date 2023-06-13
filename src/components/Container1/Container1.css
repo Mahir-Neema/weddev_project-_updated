@@ -16,6 +16,12 @@
     line-height: 75px;
     font-weight: 400;
 }
+
+.what_we_offer_cards{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
 .slide{
     display: flex;
     width: 290px;

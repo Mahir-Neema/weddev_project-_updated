@@ -22,7 +22,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin: 30px auto;
     margin-bottom: 100px;
+    max-width: 1200px;
 }
 
 .slide2 {
