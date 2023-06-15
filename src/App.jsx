@@ -4,6 +4,8 @@ import Banner from './components/Banner/Banner'
 import Container1 from './components/Container1/Container1'
 import Container2 from './components/Container2/Container2'
 import Aboutus from './components/Aboutus/Aboutus'
+import Partners from './components/Partners/Partners'
+import Contactus from './components/ContactUs/Contactus'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,8 +16,8 @@ function App() {
       <Container1/>
       <Container2/>
       <Aboutus/> 
-      <h1>app</h1>
-    
+      <Partners/>
+      <Contactus/>
     </>
   )
 }
