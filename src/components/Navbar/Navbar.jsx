@@ -19,7 +19,7 @@ function Navbar() {
         {toggle && (
           <div className="nav_links">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/trainers">Our Trainers</NavLink>
+            <NavLink to="/trainers" >Our Trainers</NavLink>
             <button onClick={toggleResources}>
               Resources <FaAngleDown />
             </button>

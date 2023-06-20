@@ -1,0 +1,46 @@
+.footer_container{
+    position: relative;
+    padding: 80px 30px 40px;
+    border-bottom: 1px solid rgb(228, 235, 243);
+}
+
+.footer_wrap_conatiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.logo_img_footer img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.footer_aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer_title{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+}
+
+.footer_text{
+    margin-top: 20px;
+    color: rgb(26, 27, 31);
+    text-decoration: none;
+}
+
+.footer_contactus{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+

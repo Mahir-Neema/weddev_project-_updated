@@ -50,3 +50,13 @@
     margin-left: 5px;
     background-color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 760px){
+    .why_join_cards_container {
+        display: grid;
+    }
+
+    .why_join_line{
+        display: none;
+    }
+}
